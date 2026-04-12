@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio | Mauricio Huerta</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg:#faf9f7;
+  --card:#ffffff;
+  --border:#e8e4df;
+  --text:#3a3530;
+  --muted:#9c9590;
+  --accent:#b5a0d8;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+
+body{
+  background:var(--bg);
+  font-family:'DM Sans',sans-serif;
+  color:var(--text);
+  padding:2rem;
+}
+
+/* HEADER */
+header{
+  max-width:900px;
+  margin:auto;
+  margin-bottom:2.5rem;
+}
+
+h1{
+  font-family:'DM Serif Display',serif;
+  font-size:2.2rem;
+}
+
+.subtitle{
+  color:var(--muted);
+  margin-top:5px;
+}
+
+/* GRID */
+.grid{
+  max-width:900px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:1.5rem;
+}
+
+/* CARD */
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:1.4rem;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  transition:.15s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  border-color:var(--accent);
+}
+
+/* CARD CONTENT */
+.card-title{
+  font-weight:500;
+  font-size:1.1rem;
+}
+
+.card-desc{
+  font-size:.85rem;
+  color:var(--muted);
+}
+
+.tag{
+  font-size:.7rem;
+  background:var(--bg);
+  border:1px solid var(--border);
+  border-radius:6px;
+  padding:2px 6px;
+  width:max-content;
+}
+
+.btn{
+  margin-top:auto;
+  text-align:center;
+  padding:0.45rem;
+  border-radius:8px;
+  text-decoration:none;
+  font-size:.85rem;
+  background:var(--accent);
+  color:white;
+}
+
+/* FOOTER */
+footer{
+  margin-top:3rem;
+  text-align:center;
+  font-size:.75rem;
+  color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Proyectos de Simulación de Sistemas I</h1>
+  <p class="subtitle">Mauricio Huerta · Ingeniería en Sistemas de Información</p>
+</header>
+
+<section class="grid">
+
+  <!-- PROYECTO 1 -->
+  <div class="card">
+    <span class="tag">Canvas · Fractales</span>
+    <div class="card-title">Triángulo de Sierpiński</div>
+    <div class="card-desc">
+      Simulación interactiva del fractal usando el juego del caos.
+      Permite visualizar la generación en tiempo real.
+    </div>
+    <a href="sierpinski.html" class="btn">Ver proyecto</a>
+  </div>
+
+  <!-- TEMPLATE PARA FUTUROS -->
+  <!--
+  <div class="card">
+    <span class="tag">Categoría</span>
+    <div class="card-title">Nombre del proyecto</div>
+    <div class="card-desc">Descripción breve</div>
+    <a href="#" class="btn">Ver proyecto</a>
+  </div>
+  -->
+
+</section>
+
+<footer>
+  © 2026 · Portafolio personal
+</footer>
+
+</body>
+</html>
