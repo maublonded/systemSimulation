@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe 2.0</title>
+  <link rel="stylesheet" href="css/styleTicTacToe.css">
+</head>
+<body>
+
+<header>
+  <h1>Tic Tac Toe 2.0</h1>
+  <p class="subtitle">Simulación de Sistemas I</p>
+</header>
+
+<!-- CONFIGURACIÓN ARRIBA -->
+<section class="config">
+  <div class="card">
+
+    <div class="row">
+      <label>Imágenes</label>
+      <select id="themeSelect">
+        <option value="0">❌ vs ⭕</option>
+        <option value="1">🐱 vs 🐶</option>
+        <option value="2">🔥 vs 💧</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <label>Celda A</label>
+      <input type="color" id="color1" value="#ffffff">
+    </div>
+
+    <div class="row">
+      <label>Celda B</label>
+      <input type="color" id="color2" value="#f0f0f0">
+    </div>
+
+    <div class="row">
+      <label>Línea ganadora</label>
+      <input type="color" id="winColor" value="#ff0000">
+    </div>
+
+    <button class="btn" onclick="startGame()">Iniciar Juego</button>
+
+  </div>
+</section>
+
+<!-- TABLERO ABAJO -->
+<section class="game">
+  <div id="timer">03:00</div>
+  <div id="board" class="board"></div>
+</section>
+
+<footer>
+  Tic Tac Toe 2 - Huerta Terán Mauricio Andrés
+</footer>
+
+<script src="js/scriptTicTacToe.js"></script>
+</body>
+</html>
